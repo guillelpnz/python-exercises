@@ -9,7 +9,7 @@ def clean_word(word):
 
     return cleaned
 
-def sum_string(input_str : str):
+def sum_string(input_str):
 
     if not isinstance(input_str, str):
         return None 
@@ -24,8 +24,10 @@ def sum_string(input_str : str):
     return acc
 
 if __name__ == '__main__':
-    input_string_list = ["Frogtek se fundó en 2010 y ahora tiene 40 empleados", "Frogtek desarrolla un software para la gestión de tiendas de barrio", 
-                         "[]", 9, "-50€ + 30€ es una operación"]
+    input_string_list = ["Frogtek se fundó en 2010 y ahora tiene 40 empleados", 
+                         "Frogtek desarrolla un software para la gestión de tiendas de barrio", 
+                         "[]", 9, "-50€ + 30€ es una operación"
+                        ]
 
     for input_string in input_string_list:
         print(f"La suma de la cadena -> {input_string} es -> {sum_string(input_string)}")
